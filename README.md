@@ -11,7 +11,7 @@ Execução:
 * Verificar o arquivo portal-meurh-config.log
 
 Exemplo de log gerado:
-```javascript
+```text
   A porta [HTTP]: 8084 deve ser diferente da porta [RESTCONFIG]: 8084
   O usuário do Protheus deve estar preenchido e não ser Admin.
 
