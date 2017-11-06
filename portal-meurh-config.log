@@ -1,0 +1,25 @@
+Portas OK
+
+Usuário do Protheus presente na sessão [RESTCONFIG]: undefined
+
+Encontrado um portal em [10.172.22.150:85/01]
+path: c:\novo rh\web\app\rh\portalrhunificado
+ENABLE: 1
+ENVIRONMENT: p1217
+
+Encontrado um rest em [httpenv1]
+URL: /rest01
+Prepare: 01
+CORSEnable: 1
+AllowOrigin: *
+
+Encontrado um portal em [localhost:85/ws]
+path: c:\p1217\protheus\protheus_data\web\ws
+ENABLE: 1
+ENVIRONMENT: p1217
+
+Encontrado um portal em [localhost:85/pc]
+path: c:\p1217\protheus\protheus_data\web\pc
+ENABLE: 1
+ENVIRONMENT: p1217
+

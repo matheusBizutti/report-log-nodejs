@@ -10,7 +10,7 @@ sections.forEach(function (section) {
   fileStr = fileStr.replace(section, sectionFix);
 }, this);
 
-let config = ini.parse(fileStr);
+let config = ini.parse(fileStr.toLowerCase());
 let log = "";
 
 // ---------------------------------------------
