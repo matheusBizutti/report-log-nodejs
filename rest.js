@@ -8,6 +8,7 @@ function restValid(config) {
                 message += "\r\npath: " + config[section].path;
                 message += "\r\nENABLE: " + config[section].enable;
                 message += "\r\nENVIRONMENT: " + config[section].environment;
+                message += "\r\nDEFAULTPAGE: " + config[section].defaultpage;
                 message += "\r\n\r\n";
             }
 
