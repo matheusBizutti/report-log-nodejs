@@ -1,25 +1,31 @@
 Portas OK
 
-Usuário do Protheus presente na sessão [RESTCONFIG]: undefined
+Usuário do Protheus presente na sessão [RESTCONFIG]: user
 
-Encontrado um portal em [10.172.22.150:85/01]
-path: c:\novo rh\web\app\rh\portalrhunificado
+Encontrado um portal em [localhost:8084/ws127]
+path: c:\totvs 12\p1217\p127_gc_eq\web\ws127
 ENABLE: 1
-ENVIRONMENT: p1217
+ENVIRONMENT: p127_bra
+
+Encontrado um portal em [spod2716.sp01.local:8084/t1]
+path: c:\rh_novo\web\app\rh
+ENABLE: 1
+ENVIRONMENT: prod
+
+Encontrado um portal em [spod2716.sp01.local:8084/t2]
+path: c:\rh_novo\web\app\rh
+ENABLE: 1
+ENVIRONMENT: p127_bra
 
 Encontrado um rest em [httpenv1]
-URL: /rest01
-Prepare: 01
+URL: /restt1
+Prepare: t1
 CORSEnable: 1
 AllowOrigin: *
 
-Encontrado um portal em [localhost:85/ws]
-path: c:\p1217\protheus\protheus_data\web\ws
-ENABLE: 1
-ENVIRONMENT: p1217
-
-Encontrado um portal em [localhost:85/pc]
-path: c:\p1217\protheus\protheus_data\web\pc
-ENABLE: 1
-ENVIRONMENT: p1217
+Encontrado um rest em [httpenv2]
+URL: /restt2
+Prepare: t2,l mg 02
+CORSEnable: 1
+AllowOrigin: *
 
