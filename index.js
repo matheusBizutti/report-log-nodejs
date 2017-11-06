@@ -1,30 +1,33 @@
-let fs = require('fs')
-  , ini = require('ini');
+let fs = require('fs');
+let ini = require('ini');
+let httpModule = '';
+let userId = '';
+let restPattern = '';
 
 let fileStr = fs.readFileSync('../appserver.ini', 'utf-8');
-
 let sections = fileStr.match(/\[(.*)\]/g);
+let config = {};
+let log = "";
 
 sections.forEach(function (section) {
   sectionFix = section.replace(/\./g, "_");
   fileStr = fileStr.replace(section, sectionFix);
 }, this);
 
-let config = ini.parse(fileStr.toLowerCase());
-let log = "";
+config = ini.parse(fileStr.toLowerCase());
 
 // ---------------------------------------------
 // - LOADING THE RETURN OF THE MODULES.
 // ---------------------------------------------
-let httpModule = require('./http.js')(config);
+httpModule = require('./http.js')(config);
 log += httpModule;
 console.error(httpModule);
 
-let userId = require('./user_protheus.js')(config);
+userId = require('./user_protheus.js')(config);
 log += userId;
 console.error(userId);
 
-let restPattern = require('./rest.js')(config);
+restPattern = require('./rest.js')(config);
 log += restPattern;
 console.log(restPattern);
 
